@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Reviews plugin",
+  "description": "This extension allows automating reviews",
+  "version": "1.0",
+  "background": {
+    "service_worker": "js/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "js/contentScript.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "jira-icon.png",
+      "24": "jira-icon.png",
+      "32": "jira-icon.png"
+    },
+    "default_title": "Autoreview",
+    "default_popup": "popup.html"
+  }
+}
