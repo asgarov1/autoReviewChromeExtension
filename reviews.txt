@@ -1,3 +1,3 @@
-1. Sauber und nach Programmierrichtlinien umgesetzt - alles in Ordnung!
-2. Implementierung ist ordnungsgemäß umgesetzt. Änderungen entsprechen den Code-Richtlinien. Tests Anpassungen sind nicht notwendig.
-3. Implementierung ist ordnungsgemäß umgesetzt. Änderungen entsprechen den Code-Richtlinien. Tests sind geschrieben.
+Sauber und nach Programmierrichtlinien umgesetzt - alles in Ordnung!
+Implementierung ist ordnungsgemäß umgesetzt. Änderungen entsprechen den Code-Richtlinien. Tests Anpassungen sind nicht notwendig.
+Implementierung ist ordnungsgemäß umgesetzt. Änderungen entsprechen den Code-Richtlinien. Tests sind geschrieben.

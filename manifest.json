@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Reviews plugin",
+  "name": "Autoreviews plugin",
   "description": "This extension allows automating reviews",
   "version": "1.0",
   "background": {

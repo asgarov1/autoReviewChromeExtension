@@ -29,7 +29,7 @@ function addReviewElementToDom(reviewLine, parent) {
 function setEventListener(reviewLine) {
     const id = getIdForReviewLine(reviewLine)
     document.getElementById(id).addEventListener('click', () => {
-        chrome.runtime.sendMessage({review: reviewLine})
+        chrome.runtime.sendMessage({reviewLine: reviewLine})
     })
 }
 
@@ -37,7 +37,9 @@ document.addEventListener(DOM_CONTENT_LOADED, function () {
     fetch(FILENAME)
         .then(fetchResult => fetchResult.text())
         .then(reviewsText => reviewsText.split("\n"))
-        .then(reviewLines => reviewLines.filter(line => line && line.trim() !== ""))
+        .then(reviewLines => reviewLines.map(line => line.trim()))
+
+        .then(reviewLines => reviewLines.filter(line => line))
         .then(reviewLines => {
             reviewLines.forEach(review => addReviewElementToDom(review, document.getElementById(REVIEWS_DIV_ID)));
             return reviewLines;
